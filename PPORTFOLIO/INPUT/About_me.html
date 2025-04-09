@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 120px 1fr;
+      height: 100vh;
+    }
+    .sidebar {
+      background-color: #000;
+      color: white;
+      grid-row: span 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+    .sidebar img {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    .sidebar nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+      transition: transform 0.2s ease-in-out;
+    }
+    .sidebar nav a:hover {
+      transform: scale(1.1);
+    }
+    .sidebar .copyright {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 12px;
+    }
+    header {
+      background-color: #000;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .main {
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    .about-me {
+      text-align: center;
+    }
+    .about-me .photo-box {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      margin: 10px auto;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      animation: pulse 2s infinite;
+    }
+    .about-me .photo-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .section {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      animation: slideUp 0.8s ease-in-out;
+    }
+    .section div {
+      width: 40%;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="c:/Users/admin/Desktop/PPORTFOLIO/INPUT/ME_PICTURE.jpg" alt="LOGO">
+      <nav>
+        <a href="About_me.html" style="margin-bottom: 250px; display: inline-block;">About</a><br>
+        <a href="Portfolio_me.html">Portfolio</a>
+      </nav>
+      <div class="copyright">Copyright 2025 @</div>
+    </div>
+
+    <header>
+      <div style="width: 100%; text-align: center;">
+        <h1 style="margin-bottom: 10px;">Makinano, Lawrence G.</h1>
+        <div style="display: flex; justify-content: center; gap: 40px;">
+          <div>Contact No: 09070811213</div>
+          <div>Address: North Olympus Novaliches Quezon City</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main" id="about">
+      <div class="about-me">
+        <h2>About me:</h2>
+        <div class="photo-box">
+          <img src="c:/Users/admin/Desktop/PPORTFOLIO/INPUT/ME_PICTURE.jpg" alt="Your Photo">
+        </div>
+        <div class="description">
+          <p>Hello, Im Lawrence G. Makinano and this is my Personal Portfolio 
+          <br>
+          These are the Experiences and skill, i've learned from my college days
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <div>
+          <h3>•Experience</h3>
+          <p>•Serve as a sergeant in the U.S ARMY For 5 years 
+            <br>(2029 - 2033)</p>
+          <p>•Cyber Security
+          <br>(2028-2029)</p>
+        </div>
+        <div>
+          <h3>•Skills</h3>
+          <p>•Car Mechanic (4 years)</p>
+          <p>•Martial Artist Coach (5 years)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
